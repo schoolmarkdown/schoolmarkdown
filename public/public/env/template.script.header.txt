@@ -1,7 +1,0 @@
-<header class="text-[1.4rem] bg-white text-black absolute top-0 left-0 right-0 m-[10mm 10mm 10mm 10mm] border-b-[1px solid black]">
-<span class="float-left"><b>${LECTURE}</b>
-</span>
-<span class="float-right">${TEACHERSEMAIL}
-</span>
-</header>
-

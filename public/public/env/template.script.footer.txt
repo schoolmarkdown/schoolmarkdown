@@ -1,7 +1,0 @@
-<footer class="text-[1.2rem] h-[10mm] leading-[10mm] bg-white text-black absolute bottom-0 left-0 right-0 m-[10mm 10mm 10mm 10mm] border-t-[1px solid black]">
-<span class="float-left">${SCHOOL}&nbsp;&nbsp;${COURSE}
-</span>
-<span class="float-right">${PAGENUMBER}
-</span>
-</footer>
-

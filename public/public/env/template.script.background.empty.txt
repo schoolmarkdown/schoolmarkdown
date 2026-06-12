@@ -1,5 +1,0 @@
-    <!--class="text-[100%] p-[25mm 10mm 20mm 10mm]"
-    top=template.script.header
-    bottom=template.script.footer
-    -->
-    

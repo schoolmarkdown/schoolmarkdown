@@ -1,5 +1,0 @@
-```chem{200%}
-width: 200
-height: 200
-molecule: H2SO4
-```
