@@ -1,0 +1,4 @@
+<!--class="text-[100%] p-[25mm 10mm 20mm 10mm]"
+top=template.faq.header
+bottom=template.faq.footer
+-->

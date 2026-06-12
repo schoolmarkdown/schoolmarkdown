@@ -1,0 +1,6 @@
+Dockerfile
+*.map
+README.*
+compose.yaml
+.dockerignore
+*.sh
