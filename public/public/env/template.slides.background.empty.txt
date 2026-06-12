@@ -1,0 +1,4 @@
+   <!--class="text-[100%] p-[10mm 10mm 10mm 10mm]"
+   top=template.slides.header
+   bottom=template.slides.footer
+   -->
