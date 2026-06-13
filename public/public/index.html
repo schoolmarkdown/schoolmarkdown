@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./schoolmarkdown-logo-black.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="
+                            default-src * data: blob: ws: wss: gap://ready file://*;
+                            style-src * 'unsafe-inline'; 
+                            script-src * 'unsafe-inline' 'unsafe-eval';
+                            connect-src * ws: wss:;">
+    <title>Teacher-schoolmarkdown.com</title>
+    <script type="module" crossorigin src="./assets/index-CdVw7CJ2.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-DWdDZTNf.js">
+    <link rel="modulepreload" crossorigin href="./assets/teacher-lib-tLu9-tpN.js">
+    <link rel="modulepreload" crossorigin href="./assets/teacher-mermaid-Dho65BCb.js">
+    <link rel="modulepreload" crossorigin href="./assets/teacher-vendor-C9mgLlyi.js">
+    <link rel="modulepreload" crossorigin href="./assets/teacher-highlight-DikD3Zb9.js">
+    <link rel="modulepreload" crossorigin href="./assets/teacher-katex-Br3xceMz.js">
+    <link rel="stylesheet" crossorigin href="./assets/teacher-lib-CCHH8Yjf.css">
+    <link rel="stylesheet" crossorigin href="./assets/teacher-vendor-CcdOzLpq.css">
+    <link rel="stylesheet" crossorigin href="./assets/teacher-highlight-DL4hhEUL.css">
+    <link rel="stylesheet" crossorigin href="./assets/teacher-katex-CdRoVNeN.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-lLkaFu1l.css">
+  <style id="vpss-style">#vpss {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: fixed;
+  background-color: var(--vpss-bg-splash, #ffffff);
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0;
+  z-index: 99999;
+  opacity: 1;
+}
+#vpss .vpss-loader {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+#vpss .vpss-loader .vpss-line {
+  position: absolute;
+  background: rgba(150, 150, 150, 0.4);
+  width: 150%;
+  height: 4px;
+}
+
+#vpss .vpss-loader .vpss-subline {
+  position: absolute;
+  background: var(--vpss-bg-loader, #0072f5);
+  height: 4px;
+}
+
+#vpss .vpss-loader .vpss-inc {
+  animation: vpss-increase 1.5s infinite;
+}
+
+#vpss .vpss-loader .vpss-dec {
+  animation: vpss-decrease 1.5s 0.5s infinite;
+}
+
+@keyframes vpss-increase {
+  from {
+    left: -5%;
+    width: 5%;
+  }
+  to {
+    left: 130%;
+    width: 100%;
+  }
+}
+
+@keyframes vpss-decrease {
+  from {
+    left: -80%;
+    width: 80%;
+  }
+  to {
+    left: 110%;
+    width: 10%;
+  }
+}
+</style></head>
+  <body>
+  
+    <div id="vpss">
+      <div class="vpss-logo"><svg xmlns="http://www.w3.org/2000/svg" width="218" height="158" viewBox="0 0 208 158">
+<style>
+    .text {
+      font-family: arial, sans-serif;
+      font-weight: bold;
+      font-size: 46px;
+      fill: black;
+    }
+  </style>
+
+<rect width="198" height="148" x="5" y="5" ry="10" stroke="#000000" stroke-width="10" fill="none"/>
+<text x="30" y="55" class="text" >school</text>
+<g transform="translate(0, 40)">
+<path fill="#000000" d="M30 98V30h20l20 25 20-25h20v68H90V59L70 84 50 59v39zm125 0l-30-33h20V30h20v35h20z">
+
+</path>
+</g>
+</svg></div>
+      <div class="vpss-loader">
+  <div class="vpss-line"></div>
+  <div class="vpss-subline vpss-inc"></div>
+  <div class="vpss-subline vpss-dec"></div>
+</div>
+
+    </div>
+    <script>
+      (function () {
+        const id = "vpss";
+        const url = new URL(window.location.href);
+        const urlParams = new URLSearchParams(url.search)
+        const param = urlParams.get(id);
+        
+        // Setup global options
+        window.__VPSS__ = {
+          id: id,
+          hidden: param === "false",
+          renderedAt: new Date().getTime(),
+          minDurationMs: 0,
+          getElement: function() {
+            return document.getElementById(id);
+          },
+          getStyles: function() {
+            return document.getElementById(id + "-style");
+          },
+          show: function () {
+            const element = this.getElement();
+            if (!element) return;
+
+            element.style.visibility = "visible";
+          },
+          hide: async function () {
+            const element = this.getElement();
+            if (!element) return;
+
+            // Set hidden flag to prevent multiple calls
+            this.hidden = true;
+
+            // Optionally wait for minDurationMs before starting animation
+            if (
+              this.minDurationMs !== undefined &&
+              this.renderedAt !== undefined
+            ) {
+              const elapsedTime = new Date().getTime() - this.renderedAt;
+              const remainingTime = Math.max(this.minDurationMs - elapsedTime, 0);
+              await new Promise((resolve) => setTimeout(resolve, remainingTime));
+            }
+
+            const animation = element.animate(
+              [{ opacity: 1 }, { opacity: 0 }],
+              { duration: 200, easing: "ease-out", fill: "forwards" }
+            );
+
+            animation.onfinish = () => {
+              this.remove();
+            };
+          },
+          remove: function () {
+            const element = this.getElement();
+            const styles = this.getStyles();
+
+            if (element && styles) {
+              element.remove();
+              styles.remove();
+            }
+          }
+        };
+
+        if (window.__VPSS__.hidden) {
+          window.__VPSS__.remove();
+        } else {
+          window.__VPSS__.show();
+        }
+        
+        // Remove query param from URL
+        if (param) {
+          urlParams.delete(id);
+          url.search = urlParams.toString();
+          window.history.replaceState({}, "", url);
+        }
+      })();
+    </script>
+  </body>
+</html>

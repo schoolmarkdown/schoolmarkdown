@@ -1,0 +1,15 @@
+```osm
+latitude: 50.36259823584863
+longitude: 12.006701848561066
+level: 5
+type: satellite
+# type: map
+places:
+- Görlitz; green
+- Berlin; blue
+geo:
+- Deutschland; red 3
+- Donau; white 2
+- Rhein; white 2
+
+```

@@ -1,0 +1,8 @@
+```function-plot
+width: 500
+height: 500
+title: Example Functions
+f: [x^2,sin(x)]
+xaxis: [ -2, 2 ]
+yaxis: [ -3, 3 ]
+```
